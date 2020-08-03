@@ -1,1 +1,15 @@
-@import './test.scss'
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'layout/grid';
+
+@import 'pages/home';
+
+
+

@@ -1,23 +1,37 @@
 import React from 'react'
-import cx from 'classnames';
-// import globalstyles from './Assets/global-styles/bootstrap';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import globalstyles from 'bootstrap/dist/css/bootstrap.min.css';
-import classes from './sass/App.module.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import classes from './sass/react-components/App.module.scss';
+import Header from './Components/Header'
+import About from './Components/About'
+import Services from './Components/Services'
+import Testimonials from './Components/Testimonials'
+import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 
 
 
  const App = () => {
     return (
         <div>
-            <h1 className={classes['header']}>Hello</h1>
+            <Header />
+            <About />
+            <Services />
+            <Testimonials />
+            <Contact />
+            <Footer />
+        </div>
+    )
+}
+
+export default App;
+
+
+
+
+{/* <h1 className={classes['header']}>Hello</h1>
             <button>This Bootstrap</button>
             <Button variant="primary" className={classes.but}>Primary</Button>
             <Button variant="secondary">Secondary</Button>
-
 
 
             <Container>
@@ -25,8 +39,18 @@ import classes from './sass/App.module.scss';
                 <Col className={classes['layout']}>1 of 1</Col>
             </Row>
             </Container>
-        </div>
-    )
-}
 
-export default App;
+
+
+
+            <Container >
+                <Row>
+                    <Col className='layout'>1 of 2</Col>
+                    <Col className={classes['layout']}>2 of 2</Col>
+                </Row>
+                <Row>
+                    <Col className={classes['layout-1']}>1 of 3</Col>
+                    <Col className={classes['layout']}>2 of 3</Col>
+                    <Col className={classes['layout']}>3 of 3</Col>
+                </Row>
+            </Container> */}
