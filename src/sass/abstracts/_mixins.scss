@@ -1,0 +1,16 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+@mixin select-cols {
+    float: left;
+
+    &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+    }
+}
