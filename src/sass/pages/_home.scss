@@ -1,10 +1,32 @@
 .header {
-    height: 60vh;
+    height: 95vh;
     position: relative;
+    background-image: url(../../img/books.jpg);
     background-size: cover;
     background-position: top;
+
+ 
+    &__logoBox {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+    }
     
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__textBox {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(21%, 90%);
+        text-align: center;
+    //    background-color: orange;
+
+    }
  }
+
 
  
 .section-about {
