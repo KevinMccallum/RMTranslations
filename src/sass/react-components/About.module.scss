@@ -1,1 +1,13 @@
 @import '../main';
+
+
+.profile {
+
+  
+    &__img {
+        position: absolute;
+        width: 60%;
+        left: 10rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    }
+}

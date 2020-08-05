@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from '../sass/react-components/Header.module.scss';
+import cx from 'classnames';
 import logo from '../img/logo-white.png'
 
 
@@ -15,7 +16,7 @@ const Header = () => {
                     </div>
                     <div className={classes['header__textBox']} >
                         <h1 className={classes['headingPrimary']} >
-                            <span className={classes['headingPrimary-main']}>Robin McCallum</span>
+                            <span className={ cx(classes['headingPrimary-main'], classes['u-margin-bottom-med']) }>Robin McCallum</span>
                             <span className={classes['headingPrimary-sub']}>Translations</span>
                         </h1>
                     </div>

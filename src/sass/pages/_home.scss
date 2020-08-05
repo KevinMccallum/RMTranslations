@@ -18,11 +18,10 @@
     
     &__textBox {
         position: absolute;
-        top: 40%;
-        left: 40%;
-        transform: translate(21%, 90%);
+        top: 50%;
+        left: 50%;
+        transform: translate(0%, 5%);
         text-align: center;
-    //    background-color: orange;
 
     }
  }
@@ -31,8 +30,8 @@
  
 .section-about {
    background-color: lightgrey;
-   padding: 25rem 0;
-//    margin-top: -20vh;
+   padding: 15rem 0 32rem 0;
+   margin-top: -6rem;
 
 }
 
