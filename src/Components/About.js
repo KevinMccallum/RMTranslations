@@ -4,7 +4,7 @@ import cx from 'classnames';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import profile from '../img/profile.jpg';
+import profile from '../img/robin.jpg';
 
 
 

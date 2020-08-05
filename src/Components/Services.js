@@ -1,15 +1,199 @@
 import React from 'react';
 import classes from '../sass/react-components/Services.module.scss';
+import Card from 'react-bootstrap/Card';
+import cx from 'classnames';
+import Button from 'react-bootstrap/Button';
+import pen from '../img/pen.jpg'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
 
 const Services = () => {
     return (
-        <div className={classes['section-services']}>
+
+        <section className={classes['section-services']}>
+
+            <div className={ cx(classes['u-center-text'], classes['u-margin-bottom-big']) }>
+                <h2 className={ classes['heading-secondary'] }>Services</h2>
+            </div>
+
+        <Container>
+            <Row>
+
+                <Col> 
+                    <div className={classes['card']}>
+                        <div className={cx(classes['card__side'], classes['card__side--front'])}>
+                            <div className={cx(classes['card__picture'], classes['card__picture--1'])}>
+                                    &nbsp;   
+                            </div>
+                            <h4 className={classes['card__heading']}>
+                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--1'])}>Translations</span>
+                            </h4>
+                            <div className={classes['card__details']}>
+                                <ul>
+                                    <li>3 day tours</li>
+                                    <li>Up to 30 people</li>
+                                    <li>2 tour guides</li>
+                                    <li>Beach available</li>
+                                    <li>Difficulty: Easy</li>
+                                    <li>Difficulty: Easy</li>
+                                    <li>Difficulty: Easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-1'])}>
+                            <div className={classes['card__cta']}>
+                                <div className={classes['card__price-box']}>
+                                    <p className={classes['card__price-only']}>Only</p>
+                                    <p className={classes['card__price-value']}>$500</p>
+                                </div>
+                                <a href="#" className={classes['btnWhite']}>Book Now!</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </Col>
+                <Col> 
+                    <div className={classes['card']}>
+                        <div className={cx(classes['card__side'], classes['card__side--front'])}>
+                            <div className={cx(classes['card__picture'], classes['card__picture--1'])}>
+                                    &nbsp;   
+                            </div>
+                            <h4 className={classes['card__heading']}>
+                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--1'])}>Subtitling</span>
+                            </h4>
+                            <div className={classes['card__details']}>
+                                <ul>
+                                    <li>3 day tours</li>
+                                    <li>Up to 30 people</li>
+                                    <li>2 tour guides</li>
+                                    <li>Beach available</li>
+                                    <li>Difficulty: Easy</li>
+                                    <li>Difficulty: Easy</li>
+                                    <li>Difficulty: Easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-1'])}>
+                            <div className={classes['card__cta']}>
+                                <div className={classes['card__price-box']}>
+                                    <p className={classes['card__price-only']}>Only</p>
+                                    <p className={classes['card__price-value']}>$500</p>
+                                </div>
+                                <a href="#" className={classes['btnWhite']}>Book Now!</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </Col>
+                <Col> 
+                    <div className={classes['card']}>
+                        <div className={cx(classes['card__side'], classes['card__side--front'])}>
+                            <div className={cx(classes['card__picture'], classes['card__picture--1'])}>
+                                    &nbsp;   
+                            </div>
+                            <h4 className={classes['card__heading']}>
+                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--1'])}>Transcriptions</span>
+                            </h4>
+                            <div className={classes['card__details']}>
+                                <ul>
+                                    <li>3 day tours</li>
+                                    <li>Up to 30 people</li>
+                                    <li>2 tour guides</li>
+                                    <li>Beach available</li>
+                                    <li>Difficulty: Easy</li>
+                                    <li>Difficulty: Easy</li>
+                                    <li>Difficulty: Easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-1'])}>
+                            <div className={classes['card__cta']}>
+                                <div className={classes['card__price-box']}>
+                                    <p className={classes['card__price-only']}>Only</p>
+                                    <p className={classes['card__price-value']}>$500</p>
+                                </div>
+                                <a href="#" className={classes['btnWhite']}>Book Now!</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </Col>
+                <Col> 
+                    <div className={classes['card']}>
+                        <div className={cx(classes['card__side'], classes['card__side--front'])}>
+                            <div className={cx(classes['card__picture'], classes['card__picture--1'])}>
+                                    &nbsp;   
+                            </div>
+                            <h4 className={classes['card__heading']}>
+                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--1'])}>Proofreading</span>
+                            </h4>
+                            <div className={classes['card__details']}>
+                                <ul>
+                                    <li>3 day tours</li>
+                                    <li>Up to 30 people</li>
+                                    <li>2 tour guides</li>
+                                    <li>Beach available</li>
+                                    <li>Difficulty: Easy</li>
+                                    <li>Difficulty: Easy</li>
+                                    <li>Difficulty: Easy</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-1'])}>
+                            <div className={classes['card__cta']}>
+                                <div className={classes['card__price-box']}>
+                                    <p className={classes['card__price-only']}>Only</p>
+                                    <p className={classes['card__price-value']}>$500</p>
+                                </div>
+                                <a href="#" className={classes['btnWhite']}>Book Now!</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </Col>
+                
+
+
+
+            </Row>
+        </Container>
+
+
         
-               Services
-        </div>
+        {/* <Container>
+            <Row>
+
+                <Col> 
+                    <Card style={{ width: '30rem' }} className={classes['card']} >
+                        <Card.Img variant="top" src={pen} />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                
+
+
+
+            </Row>
+        </Container> */}
+
+
+        
+        
+
+
+</section>
+
     )
 }
 
