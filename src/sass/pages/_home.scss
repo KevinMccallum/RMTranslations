@@ -1,16 +1,37 @@
 .header {
-    height: 60vh;
+    height: 95vh;
     position: relative;
+    background-image: url(../../img/books.jpg);
     background-size: cover;
     background-position: top;
+
+ 
+    &__logoBox {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+    }
     
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__textBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0%, 5%);
+        text-align: center;
+
+    }
  }
+
 
  
 .section-about {
    background-color: lightgrey;
-   padding: 25rem 0;
-//    margin-top: -20vh;
+   padding: 15rem 0 32rem 0;
+   margin-top: -6rem;
 
 }
 
