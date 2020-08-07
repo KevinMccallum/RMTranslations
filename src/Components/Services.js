@@ -23,7 +23,8 @@ const Services = () => {
         <Container>
             <Row>
 
-                <Col> 
+                {/* Card 1 */}
+                <Col md={3}>
                     <div className={classes['card']}>
                         <div className={cx(classes['card__side'], classes['card__side--front'])}>
                             <div className={cx(classes['card__picture'], classes['card__picture--1'])}>
@@ -34,13 +35,13 @@ const Services = () => {
                             </h4>
                             <div className={classes['card__details']}>
                                 <ul>
-                                    <li>3 day tours</li>
-                                    <li>Up to 30 people</li>
-                                    <li>2 tour guides</li>
-                                    <li>Beach available</li>
-                                    <li>Difficulty: Easy</li>
-                                    <li>Difficulty: Easy</li>
-                                    <li>Difficulty: Easy</li>
+                                    <li>Financial</li>
+                                    <li>Gastronomy</li>
+                                    <li>Tourism</li>
+                                    <li>Medicine (General)</li>
+                                    <li>Law (Contracts)</li>
+                                    <li>Official Documents</li>
+                                   
                                 </ul>
                             </div>
                         </div>
@@ -56,28 +57,28 @@ const Services = () => {
                         </div>
                     </div>
                 </Col>
-                <Col> 
+
+                {/* Card 2 */}
+                <Col md={3}>
                     <div className={classes['card']}>
                         <div className={cx(classes['card__side'], classes['card__side--front'])}>
-                            <div className={cx(classes['card__picture'], classes['card__picture--1'])}>
+                            <div className={cx(classes['card__picture'], classes['card__picture--2'])}>
                                     &nbsp;   
                             </div>
                             <h4 className={classes['card__heading']}>
-                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--1'])}>Subtitling</span>
+                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--2'])}>Subtitling</span>
                             </h4>
                             <div className={classes['card__details']}>
                                 <ul>
-                                    <li>3 day tours</li>
-                                    <li>Up to 30 people</li>
-                                    <li>2 tour guides</li>
-                                    <li>Beach available</li>
-                                    <li>Difficulty: Easy</li>
-                                    <li>Difficulty: Easy</li>
-                                    <li>Difficulty: Easy</li>
+                                    <li>Financial</li>
+                                    <li>Gastronomy</li>
+                                    <li>Tourism</li>
+                                  
+                                   
                                 </ul>
                             </div>
                         </div>
-                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-1'])}>
+                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-2'])}>
                             <div className={classes['card__cta']}>
                                 <div className={classes['card__price-box']}>
                                     <p className={classes['card__price-only']}>Only</p>
@@ -89,28 +90,28 @@ const Services = () => {
                         </div>
                     </div>
                 </Col>
-                <Col> 
+
+                {/* Card 3 */}
+                <Col md={3}>
                     <div className={classes['card']}>
                         <div className={cx(classes['card__side'], classes['card__side--front'])}>
-                            <div className={cx(classes['card__picture'], classes['card__picture--1'])}>
+                            <div className={cx(classes['card__picture'], classes['card__picture--3'])}>
                                     &nbsp;   
                             </div>
                             <h4 className={classes['card__heading']}>
-                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--1'])}>Transcriptions</span>
+                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--3'])}>Transcriptions</span>
                             </h4>
                             <div className={classes['card__details']}>
                                 <ul>
-                                    <li>3 day tours</li>
-                                    <li>Up to 30 people</li>
-                                    <li>2 tour guides</li>
-                                    <li>Beach available</li>
-                                    <li>Difficulty: Easy</li>
-                                    <li>Difficulty: Easy</li>
-                                    <li>Difficulty: Easy</li>
+                                    <li>Financial</li>
+                                    <li>Gastronomy</li>
+                                    <li>Tourism</li>
+                                  
+                                   
                                 </ul>
                             </div>
                         </div>
-                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-1'])}>
+                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-3'])}>
                             <div className={classes['card__cta']}>
                                 <div className={classes['card__price-box']}>
                                     <p className={classes['card__price-only']}>Only</p>
@@ -122,28 +123,29 @@ const Services = () => {
                         </div>
                     </div>
                 </Col>
-                <Col> 
+
+
+                {/* Card 4 */}
+                <Col md={3}>
                     <div className={classes['card']}>
                         <div className={cx(classes['card__side'], classes['card__side--front'])}>
-                            <div className={cx(classes['card__picture'], classes['card__picture--1'])}>
+                            <div className={cx(classes['card__picture'], classes['card__picture--4'])}>
                                     &nbsp;   
                             </div>
                             <h4 className={classes['card__heading']}>
-                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--1'])}>Proofreading</span>
+                                <span className={cx(classes['card__heading-span'], classes['card__heading-span--4'])}>Proofreading</span>
                             </h4>
                             <div className={classes['card__details']}>
                                 <ul>
-                                    <li>3 day tours</li>
-                                    <li>Up to 30 people</li>
-                                    <li>2 tour guides</li>
-                                    <li>Beach available</li>
-                                    <li>Difficulty: Easy</li>
-                                    <li>Difficulty: Easy</li>
-                                    <li>Difficulty: Easy</li>
+                                    <li>Financial</li>
+                                    <li>Gastronomy</li>
+                                    <li>Tourism</li>
+                                  
+                                   
                                 </ul>
                             </div>
                         </div>
-                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-1'])}>
+                        <div className={cx(classes['card__side'], classes['card__side--back'], classes['card__side--back-4'])}>
                             <div className={classes['card__cta']}>
                                 <div className={classes['card__price-box']}>
                                     <p className={classes['card__price-only']}>Only</p>
@@ -155,6 +157,7 @@ const Services = () => {
                         </div>
                     </div>
                 </Col>
+              
                 
 
 

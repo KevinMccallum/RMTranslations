@@ -8,11 +8,11 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 52rem;
+    height: 54rem;
 
 
     &__side {
-        height: 52rem;
+        height: 54rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -33,13 +33,16 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(to right bottom, $color-grey-ligth-2, #3E4C5E );
             }
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-image: linear-gradient(to right bottom, $color-grey-ligth-2, #3E4C5E );
             }
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                background-image: linear-gradient(to right bottom, $color-grey-ligth-2, #3E4C5E );
+            }
+            &-4 {
+                background-image: linear-gradient(to right bottom, $color-grey-ligth-2, #3E4C5E );
             }
         }
     }
@@ -60,17 +63,19 @@
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
 
         &--1 {
             background-image:linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url('../../img/pen.jpg');
         }
         &--2 {
-            background-image:linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url('../../img/pen.jpg');
+            background-image:linear-gradient(to right bottom, #f0d148, #b63c03), url('../../img/profile.jpg');
         }
         &--3 {
-            background-image:linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url('../../img/pen.jpg');
+            background-image:linear-gradient(to right bottom, #FFE000, #799F0C), url('../../img/transcripts.jpg');
+        }
+        &--4 {
+            background-image:linear-gradient(to right bottom, #11998e, #38ef7d), url('../../img/proofreading.jpg');
         }
     }
 
@@ -79,10 +84,8 @@
         color: $color-white;
         font-weight: 300;
         text-transform: uppercase;
-        text-align: right;
         position: absolute;
-        top: 12rem;
-        right: 2rem;
+        top: 17rem;
         width: 75%;
     }
 
@@ -101,15 +104,22 @@
 
         &--2 {
             background-image: linear-gradient(to right bottom,     
-                rgba($color-primary-light, .85), 
-                rgba($color-primary-dark, .85)
+                rgba(#f0d148, .85), 
+                rgba(#b63c03, .85)
                 );
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom,     
-                rgba($color-tertiary-light, .85), 
-                rgba($color-tertiary-dark, .85)
+                rgba(#FFE000, .85), 
+                rgba(#799F0C, .85)
+                );
+        }
+        
+        &--4 {
+            background-image: linear-gradient(to right bottom,     
+                rgba(#11998e, .85), 
+                rgba(#38ef7d, .85)
                 );
         }
     }

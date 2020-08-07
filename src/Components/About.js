@@ -23,7 +23,7 @@ const About = () => {
                                 <img src={profile} alt="profile picture" className={classes['profile__img']}/>
                         </Col>
                         <Col>
-                            <h3 className={ cx(classes['heading-tertiary'], classes['u-margin-bottom-small'])}>Robin McCallum</h3>
+                            <h3 className={ cx(classes['heading-tertiary'], classes['u-margin-bottom-med'])}>Robin McCallum</h3>
                             <p className={classes['paragraph']}>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, 
                             optio unde soluta vlo omnis quo esse rerum id consectetur, 
