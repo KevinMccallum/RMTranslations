@@ -1,6 +1,8 @@
 @import '../main';
 
 
+
+
 .card {
 
     //Functionality
@@ -33,16 +35,16 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-grey-ligth-2, #3E4C5E );
+                background-image: linear-gradient(to right bottom, $color-grey-light-2, #3E4C5E );
             }
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-grey-ligth-2, #3E4C5E );
+                background-image: linear-gradient(to right bottom, $color-grey-light-2, #3E4C5E );
             }
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-grey-ligth-2, #3E4C5E );
+                background-image: linear-gradient(to right bottom, $color-grey-light-2, #3E4C5E );
             }
             &-4 {
-                background-image: linear-gradient(to right bottom, $color-grey-ligth-2, #3E4C5E );
+                background-image: linear-gradient(to right bottom, $color-grey-light-2, #3E4C5E );
             }
         }
     }
@@ -139,7 +141,7 @@
 
 
                 &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-ligth-2;
+                    border-bottom: 1px solid $color-grey-light-2;
                 }
             }
         }

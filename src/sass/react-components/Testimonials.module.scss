@@ -1,1 +1,42 @@
 @import '../main';
+
+
+
+.carousel-slide {
+    background-color: $color-grey-dark;
+    padding: 10rem ;
+
+    &__row {
+        margin: auto;        
+    }
+
+}
+.carousel-box {
+    background-image: linear-gradient(
+        to right bottom, 
+        #CB356B, 
+        #BD3F32
+    );
+    padding: 2.5rem;
+    border-radius: 3px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 1rem rgba($color-black, $alpha: .8);
+
+
+
+    &__text {
+        color: $color-white;
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+
+
+    &__author {
+        color: $color-white;
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+}
+
+
