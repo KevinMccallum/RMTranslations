@@ -8,7 +8,69 @@ import Testimonials from './Components/Testimonials'
 import Companies from './Components/Companies'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
+import React, { Component } from 'react'
+import { Form, FormGroup, Input, Label, Button } from 'reactstrap'
+import axios from 'axios'
 
+
+class ContactForm extends Component {
+    state = {
+        name: '',
+        email: '',
+        message: ''
+    }
+
+    handleChange = e => {
+        this.setState({ [e.target.name]: e.target.value })
+    }
+
+    async handleSubmit(e) {
+        e.preventDefault()
+
+        const { name, email, message } = this.state
+
+        const form = await axios.post('/api/form', {
+            name,
+            email,
+            message
+        })
+    }
+
+
+    render() {
+        return (
+            <Form onSubmit={this.handleSubmit} style={{ width: '600px' }}>
+                <FormGroup>
+                    <Label for="name">Name:</Label>
+                    <Input
+                        type="text"
+                        name="name"
+                        onChange={this.handleChange}
+                    />
+                </FormGroup>
+
+                <FormGroup>
+                    <Label for="email">Email:</Label>
+                    <Input
+                        type="email"
+                        name="email"
+                        onChange={this.handleChange}
+                    />
+                </FormGroup>
+
+                <FormGroup>
+                    <Label for="message">Message:</Label>
+                    <Input
+                        type="textarea"
+                        name="message"
+                        onChange={this.handleChange}
+                    />
+                </FormGroup>
+
+                <Button>Submit</Button>
+            </Form>
+        )
+    }
 
 
  const App = () => {
@@ -25,7 +87,7 @@ import Footer from './Components/Footer'
     )
 }
 
-export default App;
+export default ContactForm
 
 
 
