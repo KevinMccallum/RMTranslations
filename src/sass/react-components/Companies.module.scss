@@ -1,0 +1,16 @@
+@import '../main';
+
+
+.composition {
+    // position: relative;
+
+    &__company {
+        width: 50%;
+        opacity: .5;
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);;
+    }
+}
+

@@ -5,6 +5,7 @@ import Header from './Components/Header'
 import About from './Components/About'
 import Services from './Components/Services'
 import Testimonials from './Components/Testimonials'
+import Companies from './Components/Companies'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 
@@ -17,6 +18,7 @@ import Footer from './Components/Footer'
             <About />
             <Services />
             <Testimonials />
+            <Companies />
             <Contact />
             <Footer />
         </div>
